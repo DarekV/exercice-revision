@@ -1,0 +1,52 @@
+#flexbox-01 {
+  .wrapper {
+    display: flex;
+  }
+}
+
+#flexbox-02 {
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+#flexbox-03 {
+  .wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .box {
+    width: 50%;
+  }
+}
+
+#flexbox-04 {
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    width: 50%;
+  }
+}
+
+#flexbox-05 {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+#flexbox-06 {
+  .wrapper {
+    height: 280px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}

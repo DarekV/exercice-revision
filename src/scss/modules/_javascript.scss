@@ -1,0 +1,70 @@
+#javascript-01 {
+  .box-1 {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    border: none;
+    transition: 1s;
+  }
+
+  .box-1.on {
+    background-color: lightblue;
+  }
+}
+
+.js-02 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#javascript-02 {
+  .box-2,
+  .box-3 {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    border: none;
+    transition: 1s;
+  }
+
+  .box-3.on2 {
+    background-color: lightblue;
+  }
+}
+
+.js-03 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#javascript-03 {
+  .box-4,
+  .box-5,
+  .box-6 {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    border: none;
+    transition: 1s;
+  }
+
+  .box-6 {
+    display: none;
+    &.visible {
+      display: flex;
+    }
+  }
+
+  .box-5.visible {
+    display: none;
+  }
+}

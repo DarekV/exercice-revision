@@ -1,0 +1,48 @@
+#animations-01 {
+  .box-animation {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    animation: rotation 4s linear infinite;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+#animations-02 {
+  .box-animation {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    animation: moove 5s linear infinite;
+  }
+
+  @keyframes moove {
+    0% {
+      background-color: orange;
+      transform: translate(0, 0);
+    }
+
+    25% {
+      background-color: yellowgreen;
+      transform: translate(200%, 0);
+    }
+
+    50% {
+      background-color: orange;
+      transform: translate(0, 0);
+    }
+
+    75% {
+      background-color: yellowgreen;
+      transform: translate(0, 50%);
+    }
+  }
+}

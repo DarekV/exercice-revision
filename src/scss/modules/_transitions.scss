@@ -1,0 +1,58 @@
+#transitions-01 {
+  h1 {
+    display: inline;
+    color: azure;
+    background-color: bisque;
+    transition: 0.5s;
+    &:hover {
+      background-color: azure;
+      color: bisque;
+    }
+  }
+}
+
+#transitions-02 {
+  .h1 {
+    color: azure;
+    background-color: bisque;
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    &:hover {
+      rotate: -90deg;
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+#transitions-03 {
+  .h1 {
+    color: orange;
+    display: inline;
+    font-size: 30px;
+    position: relative;
+    & p {
+      display: inline;
+      z-index: 20;
+    }
+    &:hover {
+      .line {
+        height: 100%;
+      }
+    }
+  }
+
+  .line {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: orangered;
+    transition: 0.5s;
+  }
+}
