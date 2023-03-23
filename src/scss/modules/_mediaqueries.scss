@@ -16,6 +16,20 @@
   }
 }
 
+#mediaqueries-02 {
+  display: flex;
+  .media {
+    height: 50px;
+    background-color: beige;
+    width: 100%;
+    padding: 20px 0 0 20px;
+    border: 1px solid orange;
+    @media (min-width: 900px) {
+      width: calc(100% / 3);
+    }
+  }
+}
+
 #mediaqueries-03 {
   text-align: center;
   .menu {

@@ -39,6 +39,7 @@
     & p {
       display: inline;
       z-index: 20;
+      position: relative;
     }
     &:hover {
       .line {
